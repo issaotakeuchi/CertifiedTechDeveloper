@@ -1,0 +1,24 @@
+.main-title {
+    color: mediumblue;
+}
+
+body {
+    background-color: #f3ede1;
+    }
+
+.job-title {
+    color: rgba(233, 232, 232, 0.808);
+    background-color: mediumblue;
+}
+
+#high {
+    color: mediumblue;
+}
+
+footer {
+    color: rgb(68, 65, 65);
+}
+ul {
+    color: honeydew;
+    background-color: rgb(68, 65, 65);
+}
