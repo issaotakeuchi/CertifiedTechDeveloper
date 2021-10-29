@@ -3,22 +3,27 @@
 }
 
 body {
-    background-color: #f3ede1;
+    background-color: rgb(223, 215, 185);
+    color: rgb(51, 51, 51);
     }
 
+h1{
+    color: #0d1b97;
+}
+
 .job-title {
-    color: rgba(233, 232, 232, 0.808);
-    background-color: mediumblue;
+    color:#898dbe;
+    background-color:#1726ad;
 }
 
 #high {
-    color: mediumblue;
+    color: rgb(13, 27, 151));
 }
 
 footer {
     color: rgb(68, 65, 65);
 }
 ul {
-    color: honeydew;
-    background-color: rgb(68, 65, 65);
+    color:rgb(223, 215, 185);
+    background-color:#333333;
 }
