@@ -4,22 +4,34 @@
 
 body{
     background-color: #131313;
-    background-image: url('https://www.google.com.br/url?sa=i&url=http%3A%2F%2Fwww.revistaestilolivre.com.br%2Fos-vingadores-um-resumo-da-saga%2F&psig=AOvVaw38poPQ_Awi6NmcxkeOTx2M&ust=1635464495734000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPCl9pXi6_MCFQAAAAAdAAAAABAD');
 }
 
 h1{
     color: white;
     font-family: 'Roboto', sans-serif;
 }
-media-picture{
-    width: 100%;
+
+.media-picture{
+    height: 400px;
+    background-image: url('https://c7nema.net/wp-content/uploads/2018/04/bab.jpg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
 
 }
-article{
-    background-image: url('https://i.pinimg.com/originals/54/e2/7b/54e27bb9a61ece1427c9d6a09e27aa32.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom ;
-    height: 200px;
-    
+
+.review-score{
+    color: white;
+    background-color: #e6bd09;
+    padding: 12px;
+}
+
+h2{
+    color: steelblue;
+}
+
+p{
+    color: #bdbdbd;
+    font-family: 'Roboto';
 }
