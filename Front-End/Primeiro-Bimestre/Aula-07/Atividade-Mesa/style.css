@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.banner {
+    font-family: 'Roboto';
+    height: 500px;
+    width: 1280;
+    background-image: url('https://fealkoff.com/wp-content/uploads/2015/12/banner-santa-monica.jpg');
+    background-repeat: no-repeat;
+    padding: 150px;
+    color: whitesmoke;
+
+}
+
+button{
+    font-family: 'Roboto';
+    padding: 5px 5px;
+    border: solid 3px teal;
+    border-radius: 10px;
+    background-color: teal;
+}
+*{
+    text-align: center;
+}
