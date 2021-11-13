@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('josh-stewart-CbpLSNep0l4-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+}
+header{
+    padding: 10px;
+    background-color: rgb(12, 20, 29);
+}
+
+main{
+    align-content: center;
+    text-align: center;
+}
+
+#tituloAtenas{
+    font-family: 'Architects Daughter', cursive;
+    color: linen;
+    text-align: center;
+}
+
+#sobreAtenas{
+    font-family: 'Open Sans', sans-serif, bold;
+    font-size: 20px;
+    color:linen;
+    text-align: justify; 
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
+.resumo{
+    padding: 40px;
+    background-color: #03030331;
+    border: 20px;
+    margin: 20px;
+    padding: 10px 20px;
+}
+
+.videoToutube{
+    border: 10px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.subtituloCuriosidades{
+    font-family: 'Architects Daughter', cursive;
+    color: linen;
+    text-align: center; 
+    font-size: 40px;
+    padding: 20px;
+}
+
+.listaCuriosidades{
+    padding-right: 5px;
+    font-family: 'Open Sans', sans-serif, bold;
+    font-size: 20px;
+    color: linen;
+    align-content: center;
+    
+}
+
+.curiosidades {
+    padding-left: 0px;
+    background-color: #03030331;
+    text-align: center;
+    border: 20px;
+    margin: 20px;
+    padding: 10px 40px;
+  }
+  .curiosidades > li {
+    display: inline-block;
+    border: 20px;
+    margin: 20px;
+    padding: 10px 40px;
+  }
+
+.icones {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+}
