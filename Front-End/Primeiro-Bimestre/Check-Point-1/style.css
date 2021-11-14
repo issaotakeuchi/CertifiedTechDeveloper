@@ -21,6 +21,11 @@ main{
     text-align: center;
 }
 
+footer{
+    text-align: center;
+    padding: 20px;
+}
+
 #tituloAtenas{
     font-family: 'Architects Daughter', cursive;
     color: linen;
@@ -34,9 +39,34 @@ main{
     text-align: justify; 
 }
 
-footer{
-    text-align: center;
+#subtituloCuriosidades{
+    font-family: 'Architects Daughter', cursive;
+    color: linen;
+    text-align: center; 
+    font-size: 40px;
     padding: 20px;
+}
+
+#curiosidades {
+    padding-left: 0px;
+    background-color: #03030331;
+    text-align: center;
+    border: 20px;
+    margin: 20px;
+    padding: 10px 40px;
+  }
+
+  #curiosidades > li {
+    display: inline-block;
+    border: 20px;
+    margin: 20px;
+    padding: 10px 40px;
+  }
+
+#icones {
+    margin: 30px;
+    width: 100px;
+    height: 100px;
 }
 
 .resumo{
@@ -53,40 +83,10 @@ footer{
     padding: 20px;
 }
 
-.subtituloCuriosidades{
-    font-family: 'Architects Daughter', cursive;
-    color: linen;
-    text-align: center; 
-    font-size: 40px;
-    padding: 20px;
-}
-
 .listaCuriosidades{
     padding-right: 5px;
     font-family: 'Open Sans', sans-serif, bold;
     font-size: 20px;
     color: linen;
     align-content: center;
-    
-}
-
-.curiosidades {
-    padding-left: 0px;
-    background-color: #03030331;
-    text-align: center;
-    border: 20px;
-    margin: 20px;
-    padding: 10px 40px;
-  }
-  .curiosidades > li {
-    display: inline-block;
-    border: 20px;
-    margin: 20px;
-    padding: 10px 40px;
-  }
-
-.icones {
-    margin: 30px;
-    width: 100px;
-    height: 100px;
 }
