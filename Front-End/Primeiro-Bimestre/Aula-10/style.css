@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white
+
+}
+
+.logo{
+    height: 100px;
+    background-image: url('https://www.justtikit.com/wp-content/uploads/2021/01/final-logo-example.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    
+}
+
+form {
+    padding: 12px;
+}
+
+label {
+    margin-top: 12px;
+}
+
+label, input{
+    display: block;
+    border-radius: 0%;
+}
+
+textarea{
+    display: block;
+}
+
+button{
+    display: block;
+    margin-top: 20px;
+}
+
+button{
+    display: block;
+}
