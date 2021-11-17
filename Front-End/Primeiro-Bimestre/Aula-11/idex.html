@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo"></div>
+
+
+    <main>
+
+<form>
+
+<!-- fieldset melhora o entendimento do formulario -->
+
+
+
+
+
+<h1>Cadastro de Usuário</h1>
+
+<fieldset>
+    <legend>dados pessoais</legend>
+    <label for="username">Nome de usuário</label>
+    <input type="text" name="username" placeholder="Digite aqui" id="username">
+    <!-- legal que o id seja o mesmo que o name ou camel case -->
+    <!-- id sempre unico -->
+    
+    
+    <label for="e-mail">E-mail</E-mail></label>
+    <input type="email" name="e-mail" id="e-mail">
+    
+    <!-- inserir datas. 
+        propriedades opcionais: min e max -->
+        <div>
+            <label for="birthDate">data de nascimento</label>
+            <input type="date" name="birthDate" id="birthDate" min="2018-01-01" max="2024-10-05">
+        </div>
+        
+        
+        
+        <label for="">senha</E-mail></label>
+        <input type="password" name="senha" id="senha">
+        
+        <label for="observations">observações</label>
+        <textarea name="observations" id="observations" ></textarea>
+        
+        <label for="state">sexo</label>
+        <select name="state" id="state">
+            <option value="1">masculino</option>
+            <option value="2">feminino</option>
+            <option value="3">não especificar</option>
+        </select>
+        
+    </fieldset>
+        
+        <!-- radio button é um input -- input type= 'radio' name='medio' value=''
+            checked deixa marcado algo previamente -->
+            <div>
+                <input type="radio" name="person" id="pf" value="pessoaFisica" checked>
+                <label for="pf">Pessoa Fisica</label>
+            </div>
+            
+            <div>
+                <input type="radio" name="person" id="pj" value="pessoaJuridica">
+                <label for="pj">Pessoa Juridica</label>
+            </div>
+            
+            
+            <!-- checkbox e radio button são dos poucos que colocar input antes da label -->
+            <div>
+                <input type="checkbox" name="options" id="firstOption" value="1">
+                <label for="firstOption">Opção1</label>
+            </div>
+            
+            <div>
+                <input type="checkbox" name="options" id="secondOption" value="2">
+                <label for="secondOption">Opção2</label>
+            </div>
+            
+
+
+
+    <button type="reset">limpar formulário</button>
+    <button type="submit">enviar formulario</button>
+
+</form>
+
+    </main>
+    
+</body>
+</html>
+
+
