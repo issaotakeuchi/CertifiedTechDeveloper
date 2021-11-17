@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0ch;
+    box-sizing: border-box;
+}
+
+.send {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    background-color: rgb(65, 196, 152);
+    border-radius: 12px;
+}
+
+.send:hover {
+    background-color: rgb(30, 77, 61);
+    transition: 0.5s;
+}
+
+.clear {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    background-color: rgb(65, 196, 152);
+    border-radius: 12px;
+}
+
+.clear:hover {
+    background-color: rgb(148, 204, 230);
+    transition: 0.5s;
+}
+
+h1::first-line {
+
+    background-color: rgb(186, 185, 214);
+}
+
+.checkboxes {
+    width: 10px;
+    height: 10px;
+}
+
+.checkboxes:checked {
+    width: 20px;
+    height: 20px;
+    transition: 0.5s;
+
+}

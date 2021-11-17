@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0ch;
+    box-sizing: border-box;
+}
+
+input:focus{
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+
+.main-button {
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    background-color: aquamarine;
+    border-radius: 12px;
+}
+
+.main-button:hover {
+    background-color: yellowgreen;
+    transition: 0.5s;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    background-color: tomato;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 12px;
+    margin-left: 12px;
+
+}
+
+.person-checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.person-checkbox:checked {
+    width: 25px;
+    height: 25px;
+    transition: 0.5s;
+
+}
+
+.person-checkbox:hover {
+    margin-left: 24px;
+}
+
+.main-menu li {
+    width: fit-content;
+    background-color: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+
+}
+
+.main-menu li:nth-child(2) {
+    background-color: brown;
+}
+
+p {
+
+    margin-top: 12px;
+
+}
+
+p::before {
+    content: '👀';
+
+}
+
+p::first-line {
+
+    background-color: yellow;
+}
