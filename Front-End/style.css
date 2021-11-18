@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0%;
+    
+}
+
+.topnav {
+    background-color: rgba(43,43,45,255);
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    position: relative;
+    color: #f2f2f2;
+    padding-right: 25px;
+    height: 47px;
+    vertical-align: middle;
+    padding: 10px 20px;
+  }
+
+  .topnav a:hover {
+      color: rgba(241,190,1,255);
+      transition: 1s;
+      
+  }
+
+
+  .topnav a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: rgba(241,190,1,255);
+  transition: width 1s ease 0s, left 1s ease 0s;
+  width: 0;
+}
+
+.topnav a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+  .logo {
+    padding: 25px 120px 0px 370px;
+}
+
+.portfolio {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: rgba(241,190,1,255);
+    padding: 50px;
+}
+
+
