@@ -1,0 +1,26 @@
+fieldset {
+    margin: 10px;
+    background-color: rgba(241, 237, 237, 0.904);
+    width: 1000px;
+    font-size: 15px;
+
+}
+
+body {
+    background-image: url('https://image.freepik.com/vetores-gratis/padrao-sem-emenda-de-cupcakes-monocromaticos_107547-330.jpg');
+    background-size: 20%;
+}
+
+legend {
+    font-size: 30px;
+    background-color: rgb(65, 63, 63);
+    border: black;
+    color: rgb(253, 253, 253);
+}
+
+h1 {
+    background-color: black;
+    color: white;
+    width: 1030px;
+    margin: 10px;
+}

@@ -5,8 +5,9 @@
 }
 
 body{
-    background-color:white
-
+    background-image: url('https://img.freepik.com/free-vector/abstract-background-with-monochrome-low-poly-design_1048-14453.jpg?size=626&ext=jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo{
@@ -15,7 +16,6 @@ body{
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
-    
 }
 
 form {
@@ -35,11 +35,12 @@ textarea{
     display: block;
 }
 
-button{
-    display: block;
-    margin-top: 20px;
+fieldset {
+    padding: 10px;
 }
 
-button{
-    display: block;
+button {
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
 }

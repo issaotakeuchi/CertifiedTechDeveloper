@@ -47,3 +47,29 @@ h1::first-line {
     transition: 0.5s;
 
 }
+
+fieldset {
+padding: 10px;
+margin-bottom: 10px;
+width: 800px;
+}
+
+body {
+    margin: 10px;
+}
+
+.sabores li:nth-child(2) {
+    background-color: brown;
+}
+
+input:disabled {
+    color: black;
+}
+
+input:focus {color: chocolate;}
+
+h1::first-letter {  /* Use :first-letter if você precise muito de compatibilidade com IE 8 */
+    color: rgb(175, 62, 34);
+    font-size: 130%;
+
+    
