@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+.ball {
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid #000000;
+    background-color: #FFFF00;
+    animation-name: floating;
+    animation-duration: 5s;
+    opacity: 0;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    100% {
+        transform: translate(1000px, 0px);
+        opacity: 1;
+    }
+}
+
