@@ -4,29 +4,41 @@
     box-sizing: border-box;
 }
 
-
-/* ul é o pai dos li */
-ul {
-    height: 100px;
+body {
     background-color: black;
-    display: flex;
-    list-style: none;
-    gap: 24px;
-    padding: 32px;
-    justify-content: center; /*alinha na horizontal*/
-    align-items:  center; /*alinha na vertical*/
-    flex-direction: column;
+    padding: 5px;
 }
-ul a {
-    color: white;
-    text-decoration: none;
+
+.title {
+    height: 100px;
+    color: blanchedalmond;
+    padding: 30px;
+    justify-content: center;
 }
+
+ title h1 {
+    text-align: center;
+}
+
 
 .videos {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    justify-content: center;
+    align-items:  center; 
 }
+
+.videos h1 {
+    color: blanchedalmond;
+    padding: 1px;
+}
+
+.videos p {
+    color: blanchedalmond;
+    padding: 1px;
+}
+
 
 .video {
     width: 400px;
