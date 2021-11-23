@@ -41,22 +41,21 @@ let banco = {
     consultarCliente: function (titularDaConta) {
         for (var i = 0; i < cadastroContasBancarias.length; i++) {
             if (cadastroContasBancarias[i].titularDaConta == titularDaConta) {
-                return console.log(cadastroContasBancarias[i]);
+                return cadastroContasBancarias[i];
             }
         }
     },
     deposito: function (titularDaConta, valorDeposito) {
         for (var i = 0; i < cadastroContasBancarias.length; i++) {
             if (cadastroContasBancarias[i].titularDaConta == titularDaConta) {
-                return 'Deposito realizado, seu novo saldo é ' + (cadastroContasBancarias[i].saldo + valorDeposito);
+                return 'Deposito realizado, seu novo saldo é ' + (cadastroContasBancarias[i].saldo += valorDeposito);
             }
-
         }
     },
     saque: function (titularDaConta, valorDoSque) {
         for (var i = 0; i < cadastroContasBancarias.length; i++) {
             if (cadastroContasBancarias[i].titularDaConta == titularDaConta && cadastroContasBancarias[i].saldo >= valorDoSque) {
-                return 'Extração feita com sucesso, seu novo saldo é: ' + (cadastroContasBancarias[i].saldo - valorDoSque);
+                return 'Extração feita com sucesso, seu novo saldo é: ' + (cadastroContasBancarias[i].saldo -= valorDoSque);
             } else if (cadastroContasBancarias[i].titularDaConta == titularDaConta && cadastroContasBancarias[i].saldo < valorDoSque) {return 'Fundos insuficientes'}
         }
     },
