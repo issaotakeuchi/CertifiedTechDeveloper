@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grid organiza os elementos */
+/* no grid, a coluna é dividido de forma diferente associar com mesclagem */
+body {
+    display: grid;
+    /* dividir a area em qtas colunas? a primeira parte diz respeito a primeira coluna e assim por diante */
+    grid-template-columns: 200px auto;
+    grid-template-areas: 
+    'main-header main-header'
+    'main-aside main-content'
+    'main-footer main-footer';
+    font-size: 20px;
+}
+
+header {
+    background-color: cornsilk;
+    grid-area: main-header;
+    height: 100px;
+}
+
+aside {
+    background-color: darkblue;
+    grid-area: main-aside;
+    height: 800px;
+}
+
+main {
+    background-color: darkcyan;
+    grid-area: main-content;
+    height: 800px;
+}
+
+footer {
+    background-color: darkred;
+    grid-area: main-footer;
+    height: 300px;
+}
