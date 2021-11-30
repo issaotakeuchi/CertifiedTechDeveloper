@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atenas Formulário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <form class="formContainer">
+    <h1 class="formTitle">Formulário de Cadastro</h1>
+
+    <fieldset class="personData">
+      <legend class="personDataLegend">Dados pessoais</legend>
+
+      <div class="personDataItem">
+        <p><label for="username">Nome</label></p>
+        </iv><input type="text" name="username" id="username" maxlength="100">
+      </div>
+
+      <div class="personDataItem">
+        <p><label for="e-mail">E-mail</E-mail></label></p>
+        <p><input type="email" name="e-mail" id="e-mail"></p>
+      </div>
+      <div class="personDataItem">
+        <p><label for="telephone">Telefone</label></p>
+        <p><input type="number" name="telephone" placeholder="(xx) xxxxx-xxxx" id="telephone"></p>
+      </div>
+
+      <div class="personDataItem">
+        <ul class="personDataItemRadio">
+          <li><input type="radio" name="person" id="u18" value="under18" checked>
+            <label for="u18">Menor de idade</label>
+          </li>
+          <li><input type="radio" name="person" id="adt" value="adult">
+            <label for="adt">Adulto</label>
+          </li>
+        </ul>
+      </div>
+
+      <div class="personDataItem">
+        <p><label for="birthDate">Data de nascimento</label></p>
+        <p><input type="date" name="birthDate" id="birthDate" min="1900-01-01" max="2021-11-27"></p>
+      </div>
+
+      <div class="personDataItem">
+        <p><label for="gender">Gênero</label></p>
+        <select name="gender" id="gender">
+          <option value="1"></option>
+          <option value="2">masculino</option>
+          <option value="3">feminino</option>
+          <option value="4">não especificar</option>
+        </select>
+      </div>
+
+    </fieldset>
+
+    <fieldset class="interests">
+      <legend class="cityAttractionsLegend">Interesses na cidade</legend>
+
+      <div class="cityAttractionsItem">
+        <p><label for="attractions">Principal interesse na cidade</label></p>
+        <select name="touristicAttraction" id="touristicAttraction">
+          <option value="1"></option>
+          <option value="2">museus</option>
+          <option value="3">sitios arqueológicos</option>
+          <option value="3">teatros</option>
+        </select>
+
+        <legend>Motivos de viagem</legend>
+
+        <div class="cityAttractionsItem">
+          <input type="checkbox" name="options" id="tourism" value="1">
+          <label for="tourism">Turismo</label>
+        </div>
+
+        <div class="cityAttractionsItem">
+          <input type="checkbox" name="options" id="resident" value="2">
+          <label for="resident">Residente</label>
+        </div>
+
+        <div class="cityAttractionsItem">
+          <input type="checkbox" name="options" id="study" value="3">
+          <label for="study">Estudos</label>
+        </div>
+
+    </fieldset>
+
+    <div class="buttons">
+
+      <button type="reset">limpar formulário</button>
+      <button type="submit">enviar formulario</button>
+
+    </div>
+
+
+  </form>
+  </div>
+
+</body>
+
+</html>

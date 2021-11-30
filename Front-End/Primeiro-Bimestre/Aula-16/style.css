@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 60%, 40%;
+    grid-template-areas: 
+    'main-header main-header'
+    'main-content main-aside';
+    font-size: 20px;
+}
+
+header {
+    margin-bottom: 10px;
+    background-color: gray;
+    grid-area: main-header;
+    height: 100px;
+    width: 100%;
+}
+
+aside {
+    background-color: white;
+    grid-area: main-aside;
+    height: 800px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    width: 60%;
+}
+.sideImageAndInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.sideText {
+    justify-content: space-around;
+}
+
+.sideTextH1 {
+    font-size: 20px;
+}
+
+.sideTextH2 {
+    font-size: 12px;
+}
+
+.sideTextP {
+    font-size: 10px;
+}
+
+span {
+    font-size: 10px;
+}
+
+main {
+    background-color:white;
+    grid-area: main-content;
+
+}
+
+.mainContent {
+    
+    background-size: auto;
+}

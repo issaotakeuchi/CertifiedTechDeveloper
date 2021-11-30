@@ -4,89 +4,269 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url('josh-stewart-CbpLSNep0l4-unsplash.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    display: block;
 }
-header{
-    padding: 10px;
-    background-color: rgb(12, 20, 29);
+
+header {
+    margin-top: -20px;
+    height: 90px;
+    width: 100%;
+    background-color: rgba(12, 20, 29, 0.904);
+    position: fixed;
+}
+
+#athensTitle{
+    font-family: 'Architects Daughter', cursive;
+    color: linen;
+    text-align: center;
+    padding: 30px;
 }
 
 main{
+    padding-top: 80px;
+    height: auto;
     align-content: center;
     text-align: center;
 }
 
-footer{
-    text-align: center;
-    padding: 20px;
+.resume{
+    padding: 40px;
+    background-color: #12496393;
+    border: 20px;
+    margin: 20px;
+    padding: 10px 20px;
 }
 
-#tituloAtenas{
-    font-family: 'Architects Daughter', cursive;
-    color: linen;
-    text-align: center;
-}
-
-#sobreAtenas{
+#aboutAthens{
     font-family: 'Open Sans', sans-serif, bold;
     font-size: 20px;
     color:linen;
     text-align: justify; 
 }
 
-#subtituloCuriosidades{
+.videoYoutube{
+    padding: 20px;
+  }
+
+
+.curiositiesDiv {
+    background-color: #12496393;
+    font-family: 'Open Sans', sans-serif, bold;
+    margin: 20px;
+
+}
+
+#curiositiesSubtitle{
     font-family: 'Architects Daughter', cursive;
     color: linen;
     text-align: center; 
-    font-size: 40px;
+    font-size: 50px;
+    padding-top: 20px;
+}
+  .listOfCuriosities{
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    color: linen;
+    justify-content: center; /*alinha na horizontal*/
+    align-items:  center; /*alinha na vertical*/
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+#curiosities {
+    text-align: center;
+  }
+
+  #curiosities > li {
+    display: inline-block;
+    padding: 40px;
+  } 
+  
+footer{
+    height: 100px;
+    width: 100%;
+    text-align: center;
     padding: 20px;
 }
 
-#curiosidades {
-    padding-left: 0px;
-    background-color: #03030331;
-    text-align: center;
-    border: 20px;
-    margin: 20px;
-    padding: 10px 40px;
-  }
-
-  #curiosidades > li {
-    display: inline-block;
-    border: 20px;
-    margin: 20px;
-    padding: 10px 40px;
-  }
-
-#icones {
+#icons {
     margin: 30px;
     width: 100px;
     height: 100px;
 }
 
-.resumo{
+.formContainer {
+    width: 1200px;
+    height: 1000px;
     padding: 40px;
-    background-color: #03030331;
+    background-color: #12496393;
     border: 20px;
-    margin: 20px;
+    margin: 50px auto;
     padding: 10px 20px;
 }
 
-.videoToutube{
-    border: 10px;
-    margin: 10px;
-    padding: 20px;
+.formTitle {
+    font-family: 'Architects Daughter', cursive;
+    color: linen;
+    text-align: center;
+    padding: 30px;
 }
 
-.listaCuriosidades{
-    padding-right: 5px;
-    font-family: 'Open Sans', sans-serif, bold;
-    font-size: 20px;
-    color: linen;
+.personData {
+    padding: 5px;
     align-content: center;
 }
+
+.personDataLegend {
+    font-family: 'Open Sans', sans-serif, bold;
+    color: linen;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.personDataItem {
+    font-family: 'Open Sans', sans-serif, bold;
+    color: linen;
+    padding: 5px 10px;  
+}
+
+input[type=text], input[type=email], input[type=tel], input[type=date], select[name=gender]   {
+    width: 40%;
+    padding: 5px 10px;
+    margin: 8px 0;
+  }
+
+input[type=radio]  {
+
+    padding: 5px 10px;
+    margin: 8px 0;
+  }
+
+.personDataItemRadio {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+.interests {
+    padding: 5px;
+    align-content: center;
+}
+
+.cityAttractionsLegend {
+    font-family: 'Open Sans', sans-serif, bold;
+    color: linen;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.cityAttractionsItem {
+    font-family: 'Open Sans', sans-serif, bold;
+    color: linen;
+    padding: 5px 10px;  
+}
+
+select[name=touristicAttraction]  {
+    width: 40%;
+    padding: 5px 10px;
+    margin: 8px 0;
+  }
+
+  .buttons {
+      padding-top: 20px;
+      float: right;
+  }
+
+  button[type=reset] {
+    background-color: #363636;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+
+  button[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  
+
+
+
+
+input {
+    transition: 0.4s;
+}
+
+input:hover {
+    transform: scale(1.04); 
+    background-color: rgb(230, 228, 228);
+  }
+
+select {
+    transition: 0.4s;
+}
+
+select:hover {
+    transform: scale(1.04); 
+    background-color: rgb(230, 228, 228);
+  }
+
+input[type=radio] {
+    width: 10px;
+    height: 10px;
+}
+
+input[type=radio]:checked {
+    width: 15px;
+    height: 15px;
+    transition: 0.4s;
+} 
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+input[type=checkbox]:checked {
+    width: 25px;
+    height: 25px;
+    transition: 0.4s;
+}
+
+button[type=reset]:hover {
+    background-color: #5f5f5f;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  button[type=submit]:hover {
+    background-color: #39803b;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
