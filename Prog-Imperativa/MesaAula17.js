@@ -53,3 +53,72 @@ function orderByScore (arrayStudents){
     return arrayOrderByScore;
 }
 console.log(orderByScore(students));
+
+
+// Temos que fazer um sistema para um Agricultor controlar suas vendas. Ele tem um controle de vendas em um caderno, onde os produtos estão organizados por nome, preço e quantidade vendida. 
+// Portanto, crie um array de objetos literais com essas informações. No sistema, você tem que adicionar uma função (ou várias) que realize os seguintes passos:
+let sales = [
+    {name: 'maçã', unitPrice: 1, totalSale: 10},
+    {name: 'banana', unitPrice: 1, totalSale: 20},
+    {name: 'pera', unitPrice: 2, totalSale: 5},
+    {name: 'melancia', unitPrice: 5, totalSale: 5},
+
+];
+
+// 1. Calcular o lucro total de todos os produtos;
+let  totalProfit = sales.reduce(function(init, currency){
+    return init + currency.totalSale;
+}, 0)
+
+console.log(totalProfit);
+
+// 2. Permitir pesquisar um produto pelo nome e calcular seu lucro total;
+
+function filterByProduct(productToFind){
+    let productFound = sales.filter(function(item){
+        return item.name === productToFind;
+    })
+    return productFound;
+}
+
+console.log(filterByProduct('maçã'));
+
+// 3. Permite receber um valor e indicar todos os produtos que venderam mais que esse valor;
+
+function filterMoreThan(value){
+    let productMoreThan = sales.filter(function(item){
+        return item.totalSale >= value;
+    })
+    return productMoreThan;
+}
+
+console.log(filterMoreThan(10));
+// 4. Classifique todos os produtos pela quantidade de dinheiro que geraram.
+function orderByProfit (arrayToInput){
+    let arrayToOrder = arrayToInput.sort(function(a,b){
+        return b.totalSale - a.totalSale;
+    })
+    return arrayToOrder;
+}
+console.log(orderByProfit(sales));
+
+// 5. Encontre um produto e atribua a ele um novo valor (reutilize o código que permite encontrar o produto pelo nome).
+function changeSalesValue(productToFind, valueToChange){
+    let productFound = sales.filter(function(item){
+        return item.name === productToFind;
+    })
+    return item.totalSale === valueToChange;
+}
+
+console.log(filterByProduct('maçã', 20));
+
+
+
+// 6. Calcule o lucro total após pagar 45% do lucro em impostos.
+function afterTaxes (arrayToInput){
+    let  totalProfitAfterTaxes = sales.reduce(function(init, currency){
+        return init + currency.totalSale;
+    }, 0)
+    return totalProfitAfterTaxes*0.55;  
+}
+console.log(afterTaxes(sales));
