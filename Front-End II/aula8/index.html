@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body onload="loadFinished()">
+    
+    <form>
+
+        <h1 id="color">Cadastro de Usuário</h1>
+        <fieldset>
+        <label for="username">Nome de usuário</label>
+        <input type="text" name="username" placeholder="Digite aqui" id="username">
+        <!-- legal que o id seja o mesmo que o name ou camel case -->
+        <!-- id sempre unico -->
+        <div id="counter">Contagem</div>
+        
+        <br>
+        <br>
+    
+        <label for="e-mail">E-mail</E-mail></label>
+        <input type="email" name="e-mail" id="e-mail">
+        
+        <br>
+        <br>
+        
+        <label for="">senha</E-mail></label>
+        <input type="password" name="senha" id="senha">
+    
+        <br>
+        <br>
+
+        <label for="observations">observações</label>
+        <textarea name="observations" id="observations" ></textarea>
+    
+        <br>
+        <br>
+
+        <label for="state">sexo</label>
+        <select name="state" id="state">
+            <option value="1">masculino</option>
+            <option value="2">feminino</option>
+            <option value="3">não especificar</option>
+        </select>
+
+        <br>
+        <br>
+
+    </fieldset>
+    <br>
+        <button type="reset">limpar formulário</button>
+        <button type="submit" id="submit">enviar formulario</button>
+    
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
