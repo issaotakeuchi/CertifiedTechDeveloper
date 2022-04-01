@@ -72,45 +72,43 @@ let consultandoBaseDeDados = new Promise((resolve, reject) => {
         } else {
             resolve(baseDeDados);
         }
-    }, 0);
+    }, 2000);
 
 });
 
 // Aqui realizamos uma consulta da promessa, aguardando sua resposta assíncrona
 consultandoBaseDeDados
     .then((data) => {
-        const users = data.resultado
-        console.log(users);
-        users.forEach(user => renderizarDadosUsuario(user));
+        const data = data.resultado
+        users.forEach(data => renderizarDadosUsuario(data));
     })
     .catch((err) => {
         console.log(err);
     });
 
-function renderizarDadosUsuario(users) {
+function renderizarDadosUsuario(data) {
     const card = document.querySelector(".tarjeta")
     card.style.textAlign = 'center'
-    card.style.padding = '30px'
+    card.style.padding = '12%'
     card.style.display = "flex"
     card.style.flexDirection = 'column'
     card.style.justifyContent = 'center'
     card.style.alignItems = 'center'
-    card.style.gap = '20px'
+    card.style.gap = '20%'
 
-    const foto = document.createElement("img")
-    foto.src = users.imagem.grande;
+    const photo = document.createElement("img")
+    photo.src = data.imagem.grande;
 
-    const nome = document.createElement("h1")
-    nome.innerText = users.nome.primeiro + ' ' + users.nome.utlimo;
+    const name = document.createElement("h1")
+    name.innerText = data.nome.primeiro + ' ' + data.nome.utlimo;
 
     const email = document.createElement("h2")
-    email.innerText = users.email;
+    email.innerText = data.email;
 
  
-    card.appendChild(foto)
-    card.appendChild(nome)
+    card.appendChild(picture)
+    card.appendChild(name)
     card.appendChild(email)
-    card.appendChild(registro)
     console.log(card);
 
 
