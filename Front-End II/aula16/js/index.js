@@ -79,14 +79,15 @@ let consultandoBaseDeDados = new Promise((resolve, reject) => {
 // Aqui realizamos uma consulta da promessa, aguardando sua resposta assíncrona
 consultandoBaseDeDados
     .then((data) => {
-        const data = data.resultado
-        users.forEach(data => renderizarDadosUsuario(data));
+        const dataUser = data.resultado
+        console.log(data);
+        dataUser.forEach(dataU => renderizarDadosUsuario(dataU));
     })
     .catch((err) => {
         console.log(err);
     });
 
-function renderizarDadosUsuario(data) {
+function renderizarDadosUsuario(dataUser) {
     const card = document.querySelector(".tarjeta")
     card.style.textAlign = 'center'
     card.style.padding = '12%'
@@ -97,16 +98,16 @@ function renderizarDadosUsuario(data) {
     card.style.gap = '20%'
 
     const photo = document.createElement("img")
-    photo.src = data.imagem.grande;
+    photo.src = dataUser.imagem.grande;
 
     const name = document.createElement("h1")
-    name.innerText = data.nome.primeiro + ' ' + data.nome.utlimo;
+    name.innerText = dataUser.nome.primeiro + ' ' + dataUser.nome.utlimo;
 
     const email = document.createElement("h2")
-    email.innerText = data.email;
+    email.innerText = dataUser.email;
 
  
-    card.appendChild(picture)
+    card.appendChild(photo)
     card.appendChild(name)
     card.appendChild(email)
     console.log(card);
