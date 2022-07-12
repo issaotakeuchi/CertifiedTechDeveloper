@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20220712 10:06:27.244" rpa="false" schemaversion="3">
+<suite id="s1" name="Dh" source="C:\Users\issao\Documents\DigitalHouse\CertifiedTechDeveloper\TESTECTD\dh.robot">
+<test id="s1-t1" name="Validação das informações do curso de Data Analytics" line="8">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220712 10:06:27.410" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220712 10:06:27.410" endtime="20220712 10:06:32.630"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220712 10:06:32.630" endtime="20220712 10:06:32.795"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:27.410" endtime="20220712 10:06:32.796"/>
+</kw>
+<kw name="Clicar em “Ver outros cursos”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:06:37.800" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:06:32.797" endtime="20220712 10:06:37.800"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:06:37.801" level="INFO">Executing JavaScript:
+window.scroll(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:06:37.800" endtime="20220712 10:06:37.809"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${OUTROS_CURSOS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:06:37.811" endtime="20220712 10:06:37.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:06:37.841" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section/div/div[3]/div'.</msg>
+<status status="PASS" starttime="20220712 10:06:37.841" endtime="20220712 10:06:38.994"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:37.810" endtime="20220712 10:06:38.995"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:32.796" endtime="20220712 10:06:38.995"/>
+</kw>
+<kw name="Selecionar o curso “Data Analytics”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:06:43.996" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:06:38.996" endtime="20220712 10:06:43.996"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:06:43.996" level="INFO">Executing JavaScript:
+window.scroll(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:06:43.996" endtime="20220712 10:06:44.002"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${DATA_ANALYTICS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:06:44.002" endtime="20220712 10:06:44.025"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:06:44.026" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[3]/a'.</msg>
+<status status="PASS" starttime="20220712 10:06:44.025" endtime="20220712 10:06:46.030"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:44.002" endtime="20220712 10:06:46.030"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:38.995" endtime="20220712 10:06:46.030"/>
+</kw>
+<kw name="Verificar se o texto de chamada do curso está correto" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:06:51.044" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:06:46.034" endtime="20220712 10:06:51.044"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${CHAMADA_DATA_ANALYTICS}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220712 10:06:51.068" level="INFO">Current page contains text 'voltado para qualquer pessoa que deseja ampliar suas capacidades analíticas'.</msg>
+<status status="PASS" starttime="20220712 10:06:51.044" endtime="20220712 10:06:51.068"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:46.033" endtime="20220712 10:06:51.068"/>
+</kw>
+<kw name="Verificar se a descrição do curso está correta" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:06:56.078" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:06:51.069" endtime="20220712 10:06:56.078"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${DESCRICAO_DATA_ANALYTICS}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220712 10:06:56.099" level="INFO">Current page contains text 'pessoas interessadas em business intelligence'.</msg>
+<status status="PASS" starttime="20220712 10:06:56.078" endtime="20220712 10:06:56.099"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:51.069" endtime="20220712 10:06:56.100"/>
+</kw>
+<kw name="Clicar em “Inscreva-se agora&quot;" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:01.104" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:06:56.100" endtime="20220712 10:07:01.104"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:07:01.107" level="INFO">Executing JavaScript:
+window.scroll(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:07:01.104" endtime="20220712 10:07:01.118"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${INSCREVA_AGORA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:07:01.120" endtime="20220712 10:07:01.144"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:07:01.144" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section/div/div/div[1]/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20220712 10:07:01.144" endtime="20220712 10:07:01.184"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:01.119" endtime="20220712 10:07:01.184"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:56.100" endtime="20220712 10:07:01.184"/>
+</kw>
+<kw name="Clicar em “Inscreva-se”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:06.195" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:01.185" endtime="20220712 10:07:06.195"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,3000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:07:06.196" level="INFO">Executing JavaScript:
+window.scroll(0,3000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:07:06.195" endtime="20220712 10:07:06.203"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${INSCREVA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:07:06.204" endtime="20220712 10:07:06.226"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:07:06.227" level="INFO">Clicking element 'xpath=//*[@id="0"]/div/a'.</msg>
+<status status="PASS" starttime="20220712 10:07:06.226" endtime="20220712 10:07:07.600"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:06.203" endtime="20220712 10:07:07.601"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:01.184" endtime="20220712 10:07:07.601"/>
+</kw>
+<kw name="Validar que o valor do curso é “R$10.315”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:12.609" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:07.603" endtime="20220712 10:07:12.609"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>R$10.315</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220712 10:07:12.629" level="INFO">Current page contains text 'R$10.315'.</msg>
+<status status="PASS" starttime="20220712 10:07:12.609" endtime="20220712 10:07:12.629"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:07.602" endtime="20220712 10:07:12.629"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220712 10:07:12.630" endtime="20220712 10:07:14.834"/>
+</kw>
+<status status="PASS" starttime="20220712 10:06:27.409" endtime="20220712 10:07:14.835"/>
+</test>
+<test id="s1-t2" name="Validação das informações do curso de Data Science" line="18">
+<kw name="Abrir o novo site da Digital House Brasil" library="dh" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SITE}</arg>
+<arg>${NAVEGADOR}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220712 10:07:14.837" level="INFO">Opening browser 'Chrome' to base url 'https://www.digitalhouse.com/br'.</msg>
+<status status="PASS" starttime="20220712 10:07:14.837" endtime="20220712 10:07:19.648"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220712 10:07:19.648" endtime="20220712 10:07:19.775"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:14.836" endtime="20220712 10:07:19.775"/>
+</kw>
+<kw name="Clicar em “Ver outros cursos”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:24.784" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:19.777" endtime="20220712 10:07:24.784"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:07:24.785" level="INFO">Executing JavaScript:
+window.scroll(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:07:24.784" endtime="20220712 10:07:24.796"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${OUTROS_CURSOS}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:07:24.796" endtime="20220712 10:07:24.823"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:07:24.823" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section/div/div[3]/div'.</msg>
+<status status="PASS" starttime="20220712 10:07:24.823" endtime="20220712 10:07:25.840"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:24.796" endtime="20220712 10:07:25.840"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:19.776" endtime="20220712 10:07:25.840"/>
+</kw>
+<kw name="Selecionar o curso “Data Science”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:30.850" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:25.842" endtime="20220712 10:07:30.850"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,2000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:07:30.851" level="INFO">Executing JavaScript:
+window.scroll(0,2000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:07:30.850" endtime="20220712 10:07:30.857"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${DATA_SCIENCE}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:07:30.857" endtime="20220712 10:07:30.880"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:07:30.881" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section[2]/div/div/div[4]/a'.</msg>
+<status status="PASS" starttime="20220712 10:07:30.881" endtime="20220712 10:07:32.850"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:30.857" endtime="20220712 10:07:32.850"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:25.841" endtime="20220712 10:07:32.850"/>
+</kw>
+<kw name="Verificar se o texto de chamada do curso de Data Science está correto" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:37.865" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:32.854" endtime="20220712 10:07:37.865"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${CHAMADA_DATA_SCIENCE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220712 10:07:37.888" level="INFO">Current page contains text 'profissionais de diversas áreas que desejam melhorar sua comunicação como engenheiros de Big Data'.</msg>
+<status status="PASS" starttime="20220712 10:07:37.865" endtime="20220712 10:07:37.888"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:32.853" endtime="20220712 10:07:37.888"/>
+</kw>
+<kw name="Verificar se a descrição do curso de Data Science está correta" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:42.904" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:37.889" endtime="20220712 10:07:42.904"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${DESCRICAO_DATA_SCIENCE}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220712 10:07:42.928" level="INFO">Current page contains text 'adquirir habilidades práticas com as ferramentas específicas para fazer análises'.</msg>
+<status status="PASS" starttime="20220712 10:07:42.904" endtime="20220712 10:07:42.928"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:37.889" endtime="20220712 10:07:42.928"/>
+</kw>
+<kw name="Clicar no botão &quot;Inscreva-se agora&quot;" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:47.945" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:42.929" endtime="20220712 10:07:47.945"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:07:47.945" level="INFO">Executing JavaScript:
+window.scroll(0,500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:07:47.945" endtime="20220712 10:07:47.955"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${INSCREVA_AGORA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:07:47.956" endtime="20220712 10:07:47.978"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:07:47.979" level="INFO">Clicking element 'xpath=//*[@id="__next"]/div/main/section/div/div/div[1]/div/div[2]/div[1]'.</msg>
+<status status="PASS" starttime="20220712 10:07:47.978" endtime="20220712 10:07:48.024"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:47.956" endtime="20220712 10:07:48.024"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:42.929" endtime="20220712 10:07:48.024"/>
+</kw>
+<kw name="Clicar no botão &quot;Inscreva-se&quot;" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:53.028" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:48.024" endtime="20220712 10:07:53.028"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scroll(0,3000)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20220712 10:07:53.028" level="INFO">Executing JavaScript:
+window.scroll(0,3000)
+Without any arguments.</msg>
+<status status="PASS" starttime="20220712 10:07:53.028" endtime="20220712 10:07:53.035"/>
+</kw>
+<kw name="Wait and Click" library="dh">
+<arg>${INSCREVA}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220712 10:07:53.036" endtime="20220712 10:07:53.061"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ELEMENTO}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220712 10:07:53.061" level="INFO">Clicking element 'xpath=//*[@id="0"]/div/a'.</msg>
+<status status="PASS" starttime="20220712 10:07:53.061" endtime="20220712 10:07:54.520"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:53.035" endtime="20220712 10:07:54.521"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:48.024" endtime="20220712 10:07:54.521"/>
+</kw>
+<kw name="Validar que o valor do curso é “R$ 11.878”" library="dh">
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220712 10:07:59.524" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220712 10:07:54.522" endtime="20220712 10:07:59.524"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>R$11.878</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220712 10:07:59.544" level="INFO">Current page contains text 'R$11.878'.</msg>
+<status status="PASS" starttime="20220712 10:07:59.524" endtime="20220712 10:07:59.544"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:54.522" endtime="20220712 10:07:59.544"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220712 10:07:59.545" endtime="20220712 10:08:01.754"/>
+</kw>
+<status status="PASS" starttime="20220712 10:07:14.836" endtime="20220712 10:08:01.755"/>
+</test>
+<status status="PASS" starttime="20220712 10:06:27.245" endtime="20220712 10:08:01.757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Dh">Dh</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
